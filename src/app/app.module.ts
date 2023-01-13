@@ -12,6 +12,8 @@ import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { NgbModalModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
+import { VitrineComponent } from './vitrine/vitrine.component';
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -32,7 +34,8 @@ import { CommonModule } from '@angular/common';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-
+    VitrineComponent ,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
