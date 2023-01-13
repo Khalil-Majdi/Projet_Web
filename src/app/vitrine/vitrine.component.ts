@@ -14,9 +14,6 @@ export class VitrineComponent implements OnInit {
     
     ngOnInit(): void {
   }
-  showEmail(email: string){
-    console.log(email);
-  }
   goinscri(){
 
     this.router.navigate(["/vitrine/inscription"]);
