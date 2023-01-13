@@ -18,10 +18,9 @@ export class etudiantService {
     return this.http.get<etudiant[]>(URL+'/etudiant').pipe();
   }
 
-  postetudiant():Observable<etudiant[]>{
+  postetudiant(data:any){
     let URL=environment.host;
-    return(this.http.get<etudiant[]>(URL+'/etudiant').pipe());
-    //return this.http.post<etudiant[]>(URL+'/etudiant').pipe();
+    return this.http.post(URL+'/etudiant/create',data);
   }
   
 

@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { VitrineComponent } from './vitrine/vitrine.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { etudiantComponent } from './etudiant/etudiant.component';
 
   const routes: Routes =[
     {
@@ -28,8 +29,14 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
         path: '',
         loadChildren: () => import('./vitrine/vitrinemodule').then(m => m.vitrineModule)
       }]
+    },
+    {
+      path:'etudiant',
+      component:etudiantComponent
     }
   ];
+
+  
 /* {
       path: '',
       redirectTo: 'dashboard',

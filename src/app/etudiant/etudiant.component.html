@@ -1,127 +1,54 @@
 <div class="main-content">
-  <div class="container-fluid">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="card">
-                  <div class="card-header card-header-danger">
-                      <h4 class="card-title "> Table Etudiant</h4>
-                      <p class="card-category"> -------------</p>
-                  </div>
-                  <div class="card-body">
-                      <div class="table-responsive">
-                          <table class="table">
-                              <thead class=" text-primary">
-                                  <th>
-                                      ID
-                                  </th>
-                                  <th>
-                                      Prénom-Nom 
-                                  </th>
-                                  <th>
-                                      Spécialité
-                                  </th>
-                                  <th>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                       
+                        <h4 class="card-title "> Table Etudiant</h4>
+                        <p class="card-category"> -------------</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <th>
                                       Numéro inscription
+                                    </th>
+                                    <th>
+                                        Nom 
+                                    </th>
+                                    <th>
+                                      Prénom 
                                   </th>
-                                  
-                              </thead>
-                              <tbody>
-                                  <tr>
-                                      <td>
-                                          1
-                                      </td>
-                                      <td>
-                                          Asma Ben abdallah 
-                                      </td>
-                                      <td>
-                                          C++
-                                      </td>
-                                      <td>
-                                          1ére_C
-                                      </td>
-                                      
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          2
-                                      </td>
-                                      <td>
-                                          Rami Mahmoud
-                                      </td>
-                                      <td>
-                                            Java
-                                      </td>
-                                      <td>
-                                          2éme_A
-                                      </td>
-                                      
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          3
-                                      </td>
-                                      <td>
-                                          Ahmed  Andolsi
-                                      </td>
-                                      <td>
-                                          C++
-                                      </td>
-                                      <td>
-                                          1ére_B
-                                      </td>
-                                      
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          4
-                                      </td>
-                                      <td>
-                                          Oumayma Laamari
-                                      </td>
-                                      <td>
-                                          Java
-                                      </td>
-                                      <td>
-                                          2éme_E
-                                      </td>
-                                      
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          5
-                                      </td>
-                                      <td>
-                                          Nader Saidi
-                                      </td>
-                                      <td>
-                                          AI
-                                      </td>
-                                      <td>
-                                          3éme_A
-                                      </td>
-                                    
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          6
-                                      </td>
-                                      <td>
-                                          Jihen Atia
-                                      </td>
-                                      <td>
-                                          AI
-                                      </td>
-                                      <td>
-                                          3eme_D
-                                      </td>
-                                     
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+                                    <th>
+                                        Groupe
+                                    </th>
+                                                          
+                                </thead>
+                                <tbody *ngFor="let etudiant of etudiantList">
+                                    <tr>
+                                        <td>
+                                            {{etudiant.numero_inscri}}
+                                        </td>
+                                        <td>
+                                            {{etudiant.name}}
+                                        </td>
+                                        <td>
+                                            {{etudiant.prenom}}
+                                        </td>
+                                        <td>
+                                            {{etudiant.groupe}}
+                                        </td>
+                                    </tr>
+                                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
+  

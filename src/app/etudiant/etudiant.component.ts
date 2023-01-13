@@ -14,6 +14,8 @@ export class etudiantComponent implements OnInit {
   constructor(private etudiantService:etudiantService) { }
 
   ngOnInit(): void {
+    
+    
   } 
   
   OngetALLetudiant(){
@@ -24,9 +26,8 @@ export class etudiantComponent implements OnInit {
         console.log(error);
       }
     );
-
   }
-  
+  /*
   Onpostetudiant(){
     this.etudiantService.postetudiant().subscribe(
       (data)=>{
@@ -36,7 +37,7 @@ export class etudiantComponent implements OnInit {
       }
     );
 
-  }
+  }*/
  
 
 }

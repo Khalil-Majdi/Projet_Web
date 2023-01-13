@@ -13,6 +13,7 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { NgbModalModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { VitrineComponent } from './vitrine/vitrine.component';
+import { etudiantComponent } from './etudiant/etudiant.component';
 
 @NgModule({
   imports: [
@@ -29,13 +30,14 @@ import { VitrineComponent } from './vitrine/vitrine.component';
     CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory,}),
-    NgbModule
+    NgbModule,
+    
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     VitrineComponent ,
-   
+    etudiantComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
